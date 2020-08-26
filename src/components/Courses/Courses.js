@@ -7,12 +7,13 @@ const Courses = (props) => {
         <div className="col-md-4">
             <div className="single-item my-4">
                 <div className="card p-2">
-                    <img className="card-img-top" src={picture} alt={title} style={{ height: '200px' }} />
+                    <img className="card-img-top img-height" src={picture} alt={title} />
                     <div className="card-body">
                         <hr />
-                        <h5 className="card-title line-height">{title}</h5>
-                        <small>{instructor}</small>
-                        <h4 className="price">${price}</h4>
+                        <h3 className="card-title line-height">{title}</h3>
+                        <small className="text-muted">Instructor : {instructor}</small><br/>
+                        <small className="text-muted">Duration : {duration}</small>
+                        <h4>${price}</h4>
                         <button className="btn btn-sm btn-warning"
                             onClick={() => props.addToEnroll(props.course)} >Enroll Now</button>
                     </div>

@@ -7,11 +7,17 @@
   }
 }
 .single-item:hover {
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .30);
 }
 .cart{
   margin:10px;
 }
 .line-height{
   line-height:15px;
+}
+.list-group-item:hover{
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .30);
+}
+.img-height{
+  height: 200px;
 }
