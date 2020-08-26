@@ -12,7 +12,7 @@ const OnlineCourse = () => {
         const totalCartItem = [...cart, course];
         setCart(totalCartItem);
     }
-    const totalPrice = cart.reduce((total, item) => total + item.price, 0);
+    const totalPrice = cart.reduce((total, item) => total + item.price, 0); // Calculate total price
     return (
         <div className="container-fluid">
             <h1 className="text-center mt-3 text-success">Welcome To Online Courses</h1>
